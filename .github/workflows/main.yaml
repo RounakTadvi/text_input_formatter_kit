@@ -9,23 +9,31 @@ on:
     branches:
       - main
 
+  push:
+    branches:
+      - main
+
 jobs:
   semantic_pull_request:
+    if: github.event_name == 'pull_request'
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1
 
   spell-check:
+    if: github.event_name == 'pull_request'
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/spell_check.yml@v1
     with:
       includes: "**/*.md"
       modified_files_only: false
 
   build:
+    if: github.event_name == 'pull_request'
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
     with:
       flutter_channel: stable
       min_coverage: 100
 
   codecov_coverage:
+    if: github.ref == 'refs/heads/main'
     name: Build and Test
     runs-on: ubuntu-latest
     steps:
