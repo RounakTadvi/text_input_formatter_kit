@@ -3,7 +3,7 @@ description: >-
   A lightweight and utility-driven package offering custom 
   TextInputFormatter implementations to enhance and 
   standardize user input in Flutter forms.
-version: 0.0.1
+version: 0.1.0
 repository: https://github.com/RounakTadvi/text_input_formatter_kit
 homepage: https://github.com/RounakTadvi/text_input_formatter_kit/tree/main
 environment:

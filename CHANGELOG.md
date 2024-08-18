@@ -1,4 +1,4 @@
-# 0.0.1
+# 0.1.0
 
 - feat: initial commit 🎉
 - Implemented the following formatters:
