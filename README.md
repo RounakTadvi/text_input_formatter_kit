@@ -1,7 +1,7 @@
 # 🎨 Text Input Formatter Kit
 
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![codecov](https://codecov.io/gh/RounakTadvi/text_input_formatter_kit/graph/badge.svg?token=74GHL9G2R1)](https://codecov.io/gh/RounakTadvi/text_input_formatter_kit)
+[![codecov](https://codecov.io/gh/RounakTadvi/text_input_formatter_kit/branch/main/graph/badge.svg?token=74GHL9G2R1)](https://codecov.io/gh/RounakTadvi/text_input_formatter_kit)
 [![License: MIT][license_badge]][license_link]
 
 **text_input_formatter_kit** is a lightweight and utility-driven package offering custom TextInputFormatter implementations to enhance and standardize user input in Flutter forms.
