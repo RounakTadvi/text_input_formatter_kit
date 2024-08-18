@@ -23,3 +23,40 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
     with:
       flutter_channel: stable
+      min_coverage: 100
+
+  codecov_coverage:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    container:
+      image: google/flutter
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install Flutter
+        run: flutter --version
+      
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Format Code
+        run: flutter format --set-exit-if-changed .
+
+      - name: Run Tests with Coverage
+        run: |
+          flutter pub global activate coverage
+          flutter test --coverage
+          
+      - name: Check Code Coverage
+        uses: VeryGoodOpenSource/very_good_coverage@v2
+        with:
+          path: "./coverage/lcov.info"
+          min_coverage: 90
+
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v1.0.2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage/lcov.info
+          flags: flutter
+          name: codecov-umbrella  
