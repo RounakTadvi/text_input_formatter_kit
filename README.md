@@ -56,7 +56,7 @@ See `example` folder for more examples.
 
 ## Demo
 
-![Demo](https://raw.githubusercontent.com/RounakTadvi/text_input_formatter_kit/assets/demo.gif?raw=true)
+![Demo](https://raw.githubusercontent.com/RounakTadvi/text_input_formatter_kit/release/0.0.1/assets/demo.gif?raw=true)
 
 ## Contribution 🤝
 
