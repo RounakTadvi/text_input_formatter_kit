@@ -52,6 +52,12 @@ TextField(
 
 ```
 
+See `example` folder for more examples.
+
+## Demo
+
+![Demo](https://raw.githubusercontent.com/RounakTadvi/text_input_formatter_kit/assets/demo.gif?raw=true)
+
 ## Contribution 🤝
 
 Contributions are welcome! If you have suggestions for new formatters or improvements to existing ones, feel free to create an issue or submit a pull request.
