@@ -1,6 +1,5 @@
 part of 'text_input_formatter_kit.dart';
 
-
 /// [SpacerInputFormatter] is a custom [TextInputFormatter] that adds a space
 /// after every specified number of characters in the input text.
 ///
