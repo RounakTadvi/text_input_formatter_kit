@@ -38,7 +38,7 @@ TextField(
     // Restricts input to exclude emojis
     NoEmojiTextInputFormatter(),  
 
-    // Replaces spaces with underscoresor 
+    // Replaces spaces with underscore
     ReplaceWhiteSpaceTextInputFormatter(replacementChar: '_'), 
 
     // Excludes digits and special characters
