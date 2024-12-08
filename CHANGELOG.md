@@ -1,3 +1,7 @@
+# 0.1.1
+
+- feat: Add `NoLeadingWhitespaceFormatter`: Disallows to add leading whitespace from a textfield.
+
 # 0.1.0
 
 - feat: initial commit 🎉

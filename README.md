@@ -8,6 +8,7 @@
 
 ## Features ✨
 
+- **NoLeadingWhitespaceFormatter**: Removes leading whitespace from user input. 📝
 - **CapitalizeTextFormatter**: Capitalizes the first letter of each word in the input text. 🅰️
 - **LowerCaseTextFormatter**: Converts all input text to lowercase. 🔠
 - **NoEmojiTextInputFormatter**: Restricts input to exclude emojis. 🚫😊
@@ -30,6 +31,9 @@ import 'package:text_input_formatter_kit/text_input_formatter_kit.dart';
 
 TextField(
   inputFormatters: <TextInputFormatter>[
+    // Removes leading whitespace from user input
+    NoLeadingWhitespaceFormatter(), 
+
     // Capitalizes the first letter of each word
     CapitalizeTextFormatter(), 
 
