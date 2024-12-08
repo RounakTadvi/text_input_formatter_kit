@@ -19,6 +19,7 @@ class PhoneNumberInput extends StatelessWidget {
         SpacerInputFormatter(
           spaceEvery: 5,
         ),
+        NoLeadingWhitespaceFormatter(),
       ],
       autocorrect: false,
       style: GoogleFonts.rubik(

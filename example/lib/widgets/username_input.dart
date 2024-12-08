@@ -21,6 +21,7 @@ class UsernameInput extends StatelessWidget {
         ReplaceWhiteSpaceTextInputFormatter(
           replacementChar: '_',
         ),
+        NoLeadingWhitespaceFormatter(),
       ],
       style: GoogleFonts.rubik(
         fontSize: 16,

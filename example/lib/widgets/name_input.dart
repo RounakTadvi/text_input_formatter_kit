@@ -20,6 +20,7 @@ class NameInput extends StatelessWidget {
         CapitalizeTextFormatter(),
         NoEmojiTextInputFormatter(),
         RestrictDigitsAndSpecialCharactersTextInputFormatter(),
+        NoLeadingWhitespaceFormatter(),
       ],
       style: GoogleFonts.rubik(
         fontSize: 16,

@@ -16,6 +16,7 @@ class EmailInput extends StatelessWidget {
       inputFormatters: <TextInputFormatter>[
         NoEmojiTextInputFormatter(),
         LowerCaseTextFormatter(),
+        NoLeadingWhitespaceFormatter(),
       ],
       onChanged: (value) {
         debugPrint('Email onChanged: $value');
